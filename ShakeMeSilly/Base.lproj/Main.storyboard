@@ -47,9 +47,12 @@ Silly</string>
                                     <constraint firstAttribute="height" constant="76" id="wXK-8f-L0t"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="40"/>
-                                <state key="normal" title="Start Game">
+                                <state key="normal" title="Start">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U4U-mw-BjJ"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Face1" translatesAutoresizingMaskIntoConstraints="NO" id="Mqb-sM-YLu">
                                 <rect key="frame" x="16" y="258" width="343" height="239"/>
@@ -89,6 +92,12 @@ Silly</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Mqb-sM-YLu" id="0cd-Ne-Hdk"/>
+                        <outlet property="scoreLabel" destination="c21-cr-Bzm" id="Bga-K3-ij7"/>
+                        <outlet property="startGameButton" destination="RLh-oK-9f3" id="Arf-5C-qJ6"/>
+                        <outlet property="timeLabel" destination="IbT-DR-F2j" id="hUA-F7-2lX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
