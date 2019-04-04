@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     @objc func startCounter() {
         
         timeInt -= 1
-        timeLabel.text = String(timeInt)
+        timeLabel.text = String("Time : \(timeInt)")
         if timeInt < 1 {
             
             timer.invalidate()
@@ -56,6 +56,7 @@ class ViewController: UIViewController {
             startGameButton.alpha = 1
             startGameButton.isEnabled = true
             startGameButton.setTitle("Restart", for: UIControl.State.normal)
+            
         }
         
     }
